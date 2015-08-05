@@ -4,7 +4,8 @@
    *   Goals: Make all the tests pass.
    *
    * NOTE: You must leave the expected unchanged!
-   * Helps: If you need some help you can go to mdn:
+   *
+   * Need some helps? Go to mdn:
    *   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
    */
 
@@ -23,7 +24,7 @@
       });
 
       it('defining properties is simple', function() {
-        expect(object.firstProperty).toBeDefined();
+        expect(object.foo).toBeDefined();
       });
 
       it('defining methods is simple too', function() {
@@ -31,19 +32,19 @@
       });
     });
 
-    describe('using "this" property:', function() {
+    describe('using "this" property, meens the instance of the object:', function() {
       beforeEach(function() {
-        object.setProperty = function(newProperty) {
+        object.setFoo = function(newFoo) {
 
         };
       });
 
       it('can be used inside object methods.', function() {
-        var newValue = 42;
+        var newFoo = 42;
 
-        object.setProperty(newValue);
+        object.setFoo(newFoo);
 
-        expect(object.firstProperty).toBe(newValue);
+        expect(object.foo).toBe(newFoo);
       });
     });
   });
