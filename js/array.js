@@ -70,5 +70,44 @@
 
       expect(array).toEqual(['item']);
     });
+
+    it('find the first index with "indexOf" method.', function() {
+      var item = 'findMe';
+      var array = ['first', 'second', item];
+
+      var assert = array; // call method here.
+
+      expect(assert).toBe(2);
+    });
+
+    it('find the last index with "lastIndexOf" method.', function() {
+      var item = 'findMe';
+      var array = ['first', 'findMe', 'third', item];
+
+      var assert = array; // call method here.
+
+      expect(assert).toBe(3);
+    });
+
+    describe('remove an item by index:', function() {
+      it('find the index with "indexOf" and remove it with the "splice" method.', function() {
+        var array = ['item', 'removeMe', 'last'];
+        var indexToRemove = array;
+
+        array; // call method splice here.
+
+        expect(array).toEqual(['item', 'last']);
+      });
+    });
+
+    it('copy an array with the "slice" method', function() {
+      var copyMe = ['firstItem', 'secondItem'];
+
+      var newArray = copyMe; // call method here.
+
+      expect(newArray).toEqual(copyMe);
+
+      expect(newArray).not.toBe(copyMe); // testing references to be differents.
+    });
   });
 })();
