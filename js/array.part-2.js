@@ -1,6 +1,6 @@
 (function() {
   /**
-   * Creating array inside JavaScript.
+   * Array methods in JavaScript.
    *   Goals: Make all the tests pass.
    *
    * NOTE: You must leave the expected unchanged!
