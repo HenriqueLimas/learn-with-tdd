@@ -11,7 +11,7 @@ Install NodeJS https://nodejs.org/
 Clone the repo using Git:
 
 ```bash
-https://github.com/HenriqueLimas/learn-with-tdd.git
+git clone https://github.com/HenriqueLimas/learn-with-tdd.git
 ```
 
 Alternatively you can [download](https://github.com/HenriqueLimas/learn-with-tdd/archive/master.zip)
