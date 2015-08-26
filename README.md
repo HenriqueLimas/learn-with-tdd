@@ -21,7 +21,7 @@ this repository.
 
 Install the necessary dependencies, from the root of the project:
 ```bash
-npm install && npm install -g gulp && npm install -g karma-cli
+npm install -g gulp && npm install -g karma-cli && npm install
 ```
 
 ### Lessons
@@ -32,7 +32,7 @@ gulp js
 ```
 
 #### TODO:
-- [ ] Separate content with "Lessons" folder.
+- [ ] Separate content in "Lessons" folder.
 - Javascript
    - [x] Variables
    - [x] Object
