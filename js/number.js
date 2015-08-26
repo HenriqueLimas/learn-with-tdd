@@ -55,6 +55,93 @@
 
         expect(positiveInfinity).toBeGreaterThan(0);
       });
+
+      it('converts a string into a number value.', function() {
+        var numberString = '42';
+
+        var assert = Number;
+
+        expect(assert).toBe(42);
+      });
+    });
+
+    describe('instances methods', function() {
+      describe('toExponential([fractionDigits])', function() {
+        it('returns a string representing the number in exponential notation.', function() {
+          var number = 42;
+
+          var assert = number; // call method here.
+
+          expect(assert).toBe('4.2e+1');
+        });
+      });
+
+      describe('toFixed([digits])', function() {
+        it('returns a string representing the number in fixed-point notation.', function() {
+          var number = 42.42;
+          var digits = 3;
+
+          var assert = number; // call method here.
+
+          expect(assert).toBe('42.420');
+        });
+      });
+
+      describe('toLocaleString([locale] [, option])', function() {
+        it('returns a string with a language sensitive representation of the number.', function() {
+          var number = 1234.42;
+          var locale = 'en-US';
+
+          var assert = number; // call method here;
+
+          expect(assert).toBe('1,234.42');
+        });
+
+        it('can returns a specified string currency using option.', function() {
+          var number = 1234.42;
+          var locale = 'ja-JP'
+          var option =  { // syntax to create an object. (See object lesson.);
+            style: 'currency',
+            currency: 'JPY'
+          };
+
+          var assert = number; // call method here;
+
+          expect(assert).toBe('￥1,234.42');
+        });
+      });
+
+      describe('toPrecision([precision])', function() {
+        it('returns a string representing fixed-point or exponential notation rounded to a precision', function() {
+          var number = 42.421234;
+          var precision = 4;
+
+          var assert = number; // call method here.
+
+          expect(assert).toBe('42.42');
+        });
+      });
+
+      describe('toString([radix])', function() {
+        it('returns a string representing the number.', function() {
+          var number = 42;
+          var radix = 2; // An integer specifyng the base to use for representing numeric values.
+
+          var assert = number; // call method here.
+
+          expect(assert).toBe('101010');
+        });
+      });
+
+      describe('valueOf()', function() {
+        it('returns the primitive value of the number.', function() {
+          var number = new Number(42);
+
+          var assert = number;
+
+          expect(assert).toBe(42);
+        });
+      });
     });
   });
 })();
