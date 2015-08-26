@@ -103,7 +103,7 @@
 
           var reduced = array; // call method here. Tips: use the initial value to start the accumulator.
 
-          expect(reduced).toBe(10);
+          expect(reduced).toEqual([5, 6, 3, 4, 1, 2]);
         });
       });
     });
