@@ -39,7 +39,7 @@ gulp js
    - [x] String
    - [x] Function
    - [x] Array
-   - [ ] Number
+   - [x] Number
    - [ ] Loop
    - [ ] If-else
 
