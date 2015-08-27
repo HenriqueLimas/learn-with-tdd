@@ -40,7 +40,7 @@ gulp js
    - [x] Function
    - [x] Array
    - [x] Number
-   - [ ] Loop
+   - [x] Loop
    - [ ] If-else
 
 - AngularJS
