@@ -26,9 +26,9 @@ npm install -g gulp && npm install -g karma-cli && npm install
 
 ### Lessons
 
-Run the following one liner to run JS lessons.
+Run the following one liner to run JS first lesson (Total lessons: 10).
 ```bash
-gulp js
+gulp js:lesson1
 ```
 
 #### TODO:
