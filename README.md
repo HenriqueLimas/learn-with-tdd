@@ -32,7 +32,7 @@ gulp js
 ```
 
 #### TODO:
-- [ ] Separate content in "Lessons" folder.
+- [x] Separate content in "Lessons" folder.
 - Javascript
    - [x] Variables
    - [x] Object
