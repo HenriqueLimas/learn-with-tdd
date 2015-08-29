@@ -41,7 +41,7 @@ gulp js
    - [x] Array
    - [x] Number
    - [x] Loop
-   - [ ] If-else
+   - [x] If-else
 
 - AngularJS
   - [ ] Modules
