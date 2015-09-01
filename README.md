@@ -30,25 +30,3 @@ Run the following one liner to run JS first lesson (Total lessons: 10).
 ```bash
 gulp js:lesson1
 ```
-
-#### TODO:
-- [x] Separate content in "Lessons" folder.
-- Javascript
-   - [x] Variables
-   - [x] Object
-   - [x] String
-   - [x] Function
-   - [x] Array
-   - [x] Number
-   - [x] Loop
-   - [x] If-else
-
-- AngularJS
-  - [ ] Modules
-  - [ ] Service
-  - [ ] Factory
-  - [ ] Constant
-  - [ ] Controller
-  - [ ] Directive
-  - [ ] $filter
-  - [ ] $http 
