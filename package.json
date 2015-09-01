@@ -2,9 +2,12 @@
   "name": "learn-with-tdd",
   "version": "1.0.0",
   "description": "Learn Javascript and frameworks with unit testing.",
-  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "ltdd": "./bin/ltdd.js"
   },
   "author": "Henrique Limas",
   "license": "ISC",
