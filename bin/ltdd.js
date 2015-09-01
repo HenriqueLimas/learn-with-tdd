@@ -12,15 +12,15 @@ var lesson = userArgs[1];
 
 var taskName = course + ':' + lesson;
 var gulpProcess = spawn('gulp', [taskName], {
-	stdio: 'inherit',
-	cwd: cwd
+  stdio: 'inherit',
+  cwd: cwd
 });
 
 gulpProcess.on('close', function(code) {
-	process.exit(code);
+  process.exit(code);
 });
 
 process.on('uncaughtException', function(err) {
-	console.err(err.stack);
-	gulpProcess.kill('SIGHUP');
+  console.err(err.stack);
+  gulpProcess.kill('SIGHUP');
 });
