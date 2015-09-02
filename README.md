@@ -21,7 +21,7 @@ this repository.
 
 Install the necessary dependencies, from the root of the project:
 ```bash
-npm install -g ltdd && npm install -g karma-cli && npm install
+npm install -g learn-with-tdd karma-cli && npm install
 ```
 
 ### Lessons
