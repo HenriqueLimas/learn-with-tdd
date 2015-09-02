@@ -1,5 +1,10 @@
+var jsLogo = require('./js-logo');
+var chalk = require('chalk');
+
 module.exports = {
   js: {
+    logo: jsLogo,
+    welcome: chalk.cyan.bold('Welcome to Javascript Course'),
     lesson1: {
       files: ['lesson-01/*.js'],
       title: ''

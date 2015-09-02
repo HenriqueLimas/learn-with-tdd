@@ -20,6 +20,11 @@ var lesson = userArgs[1];
 
 var lessonConfig = lessons[course][lesson];
 
+console.log(lessons[course].logo);
+console.log('\n');
+console.log(lessons[course].welcome);
+console.log('\n');
+
 var karmaProcess = new karma(extend(karmaConfig, {
   files: lessonConfig.files
 })).start();
