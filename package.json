@@ -12,8 +12,11 @@
   "author": "Henrique Limas",
   "license": "ISC",
   "devDependencies": {
+    "gulp": "^3.9.0"
+  },
+  "dependencies": {
+    "chalk": "^1.1.1",
     "extend": "^3.0.0",
-    "gulp": "^3.9.0",
     "jasmine-core": "^2.3.4",
     "karma": "^0.13.4",
     "karma-chrome-launcher": "^0.2.0",
