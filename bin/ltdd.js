@@ -24,6 +24,10 @@ console.log(lessons[course].logo);
 console.log('\n');
 console.log(lessons[course].welcome);
 console.log('\n');
+console.log(lessons[course][lesson].lessonNumber);
+console.log('\n');
+console.log('Today we gonna learn: ' + lessons[course][lesson].title);
+console.log('\n');
 
 var karmaProcess = new karma(extend(karmaConfig, {
   files: lessonConfig.files
