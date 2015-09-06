@@ -50,9 +50,7 @@ In the image above are ```'Variables'``` and ```'declaring variables'```.
 ```it```: this is the test to do.
 
 ```expect```: Take a value, that is the actual, and it is chained with a Matcher function which takes 
-the expected value. In the example the actual value is ```testingVariables``` and the Matcher is 
-```toThrowError```.
-
+the expected value. In the example the actual value is ```testingVariables``` and the Matcher is ``` toThrowError```.
 To pass all the tests it needs to make the ```expect``` be true. 
 In the example above the function ```testingVariables``` is throwing an error, because
 there is a syntax error inside. It needs to correct that and make the ```testingVariables``` 
