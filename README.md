@@ -34,9 +34,11 @@ ltdd js lesson1
 ### Lesson 0
 
 **Terminal output:**
+
 ![Failed output test](./lesson-00/failed-test-output.png)
 
 **Test source:**
+
 ![Test source](./lesson-00/test-example.png)
 
 The framework used to write the tests is [Jasmine](http://jasmine.github.io/2.3/introduction.html) 
