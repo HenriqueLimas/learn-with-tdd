@@ -1,0 +1,15 @@
+{
+  "name": "ltdd-angular",
+  "version": "0.0.0",
+  "homepage": "https://github.com/HenriqueLimas/learn-with-tdd",
+  "authors": [
+    "Henrique Ramos Limas <henrique.ramos.limas@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.4.5"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.4.5"
+  }
+}

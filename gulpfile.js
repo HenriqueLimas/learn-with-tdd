@@ -3,29 +3,46 @@ var extend = require('extend');
 
 var karma = require('karma').Server;
 
-var karmaConfig = {
-  configFile: __dirname + '/js/karma.conf.js'
-};
+var jsLessonFiles = [
+  '../utils/customMatchers.js',
+];
 
 gulp.task('js', function(done) {
-  new karma(karmaConfig, done).start();
+  new karma({
+    configFile: __dirname + '/js/karma.conf.js'
+  }, done).start();
 });
 
-createTaskLesson('js:lesson1', ['lesson-01/*.js']);
-createTaskLesson('js:lesson2', ['lesson-02/*.js']);
-createTaskLesson('js:lesson3', ['lesson-03/*.js']);
-createTaskLesson('js:lesson4', ['lesson-04/*.js']);
-createTaskLesson('js:lesson5', ['lesson-05/*.js']);
-createTaskLesson('js:lesson6', ['lesson-06/*.js']);
-createTaskLesson('js:lesson7', ['lesson-07/*.js']);
-createTaskLesson('js:lesson8', ['lesson-08/*.js']);
-createTaskLesson('js:lesson9', ['lesson-09/*.js']);
-createTaskLesson('js:lesson10', ['lesson-10/*.js']);
+createTaskLesson('js', 'js:lesson1', jsLessonFiles.concat(['lesson-01/*.js']));
+createTaskLesson('js', 'js:lesson2', jsLessonFiles.concat(['lesson-02/*.js']));
+createTaskLesson('js', 'js:lesson3', jsLessonFiles.concat(['lesson-03/*.js']));
+createTaskLesson('js', 'js:lesson4', jsLessonFiles.concat(['lesson-04/*.js']));
+createTaskLesson('js', 'js:lesson5', jsLessonFiles.concat(['lesson-05/*.js']));
+createTaskLesson('js', 'js:lesson6', jsLessonFiles.concat(['lesson-06/*.js']));
+createTaskLesson('js', 'js:lesson7', jsLessonFiles.concat(['lesson-07/*.js']));
+createTaskLesson('js', 'js:lesson8', jsLessonFiles.concat(['lesson-08/*.js']));
+createTaskLesson('js', 'js:lesson9', jsLessonFiles.concat(['lesson-09/*.js']));
+createTaskLesson('js', 'js:lesson10', jsLessonFiles.concat(['lesson-10/*.js']));
 
-function createTaskLesson(task, files) {
+var angularLessonFiles = [
+  '../utils/customMatchers.js',
+  'lib/angular/angular.js'
+];
+
+gulp.task('angular', function(done) {
+  new karma({
+    configFile: __dirname + '/angular/karma.conf.js'
+  }, done).start();
+});
+
+createTaskLesson('angular', 'angular:lesson1', angularLessonFiles.concat(['lesson-01/*.js']));
+
+function createTaskLesson(lessonPath, task, files) {
   gulp.task(task, function(done) {
     new karma(extend({
       files: files
-    }, karmaConfig), done).start();
+    }, {
+      configFile: __dirname + '/' + lessonPath + '/karma.conf.js'
+    }), done).start();
   });
 }
