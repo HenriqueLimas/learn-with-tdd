@@ -17,6 +17,7 @@ module.exports = function(config) {
     files: [
       '../utils/customMatchers.js',
       'lib/angular/angular.js',
+      'lib/angular-mocks/angular-mocks.js',
       'lesson-*/*.js'
     ],
 

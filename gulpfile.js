@@ -36,6 +36,7 @@ gulp.task('angular', function(done) {
 });
 
 createTaskLesson('angular', 'angular:lesson1', angularLessonFiles.concat(['lesson-01/*.js']));
+createTaskLesson('angular', 'angular:lesson2', angularLessonFiles.concat(['lesson-02/*.js']));
 
 function createTaskLesson(lessonPath, task, files) {
   gulp.task(task, function(done) {
